@@ -18,7 +18,6 @@
 
 <style scoped>
 .userbar-container{
-    display: table-column;
     padding-bottom: 75px;
 }
 .bottom-content {

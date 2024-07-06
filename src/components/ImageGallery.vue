@@ -1,0 +1,22 @@
+<template>
+  <div class="image-gallary-container">
+    <img v-for="post in props.posts" :key="posts.id" :src="post.image" :alt="post.name" class="" />
+  </div>
+</template>
+
+<script setup>
+import { defineProps } from "vue";
+const props = defineProps(["posts"]);
+</script>
+
+<style scoped>
+.image-gallary-container {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+img {
+  margin: 5px;
+  width: 200px;
+}
+</style>
